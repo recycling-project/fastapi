@@ -14,7 +14,7 @@ import torch  # GPU 사용 여부 확인용
 # ====================================================
 BASE_DIR = pathlib.Path(__file__).parent.parent
 
-MODEL_WEIGHTS_PATH = BASE_DIR / "recycling" / "ai" / "models" / "train_yolov8m" / "weights" / "best.pt"
+MODEL_WEIGHTS_PATH = BASE_DIR / "ai" / "models" / "train_tuned_final" / "weights" / "best.pt"
 
 DEVICE = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 print(f"Using device: {DEVICE}")
