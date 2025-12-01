@@ -5,6 +5,7 @@ from PIL import Image
 import uvicorn
 import os
 import pathlib
+import uvicorn
 import torch  # GPU 사용 여부 확인용
 # 서윤 배포하는 사이트에서 라이브러리 잘 깔도록 확인잘해 
 
@@ -103,5 +104,9 @@ async def predict_image(file: UploadFile = File(...)):
 
 # 5. 서버 실행 (로컬 테스트용)
 if __name__ == "__main__":
-    # --reload 옵션은 코드를 수정할 때마다 서버를 자동 재시작합니다.
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(
+        "app:app",          # 파일명:변수명
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 7860)),
+        reload=False
+    )
