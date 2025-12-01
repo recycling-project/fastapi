@@ -1,13 +1,14 @@
-fastapi
-uvicorn
-pillow
-numpy
+fastapi==0.103.1
+uvicorn==0.23.2
+
+pillow==10.0.0
+numpy==1.26.0
 
 # YOLOv8
 ultralytics==8.0.196
 
-# CPU 버전 PyTorch
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
-torchaudio==2.0.2+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
+# multipart 처리를 위해 필요
+python-multipart==0.0.6
+
+# CPU 버전 PyTorch (Railway에서 설치 가능한 버전)
+torch==2.1.0
