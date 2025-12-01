@@ -104,4 +104,4 @@ async def predict_image(file: UploadFile = File(...)):
 # 5. 서버 실행 (로컬 테스트용)
 if __name__ == "__main__":
     # --reload 옵션은 코드를 수정할 때마다 서버를 자동 재시작합니다.
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
