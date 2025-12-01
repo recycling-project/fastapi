@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-ultralytics
-torch==2.1.0+cpu
+ultralytics==8.0.100
 pillow
 python-multipart
