@@ -2,9 +2,11 @@ fastapi
 uvicorn
 pillow
 numpy
-ultralytics
 
-# 핵심! GPU 버전(X) → CPU 전용(O)
+# YOLOv8
+ultralytics==8.0.196
+
+# CPU 버전 PyTorch
 torch==2.0.1+cpu
 torchvision==0.15.2+cpu
 torchaudio==2.0.2+cpu
