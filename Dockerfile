@@ -43,4 +43,4 @@ EXPOSE 8000
 # ============================
 # 7) FastAPI 실행 명령
 # ============================
-CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
+CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-7860}"]
