@@ -1,5 +1,11 @@
 fastapi
 uvicorn
-ultralytics==8.0.100
 pillow
-python-multipart
+numpy
+ultralytics
+
+# 핵심! GPU 버전(X) → CPU 전용(O)
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
+torchaudio==2.0.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
