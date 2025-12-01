@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 ultralytics
-torch
+torch==2.1.0+cpu
 pillow
 python-multipart
